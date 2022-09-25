@@ -1,5 +1,6 @@
 import numpy as np
 
+# Homework 04: Cifragem por Substituição
 alphabet_code = {'a':'Z', 'b':2, 'c':'x', 'd':'g', 'e':4, 'f':9, 'g':7, 'h':8,
                  'i':'v', 'j':'C', 'k':'l', 'l':5, 'm':1, 'n':9, 'o':'P', 'p':0,
                  'q':'C', 'r':'D', 's':3, 't':'N', 'u':'F', 'v':6, 'w':'H',

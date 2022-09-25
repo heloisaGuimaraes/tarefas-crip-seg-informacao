@@ -1,12 +1,13 @@
 import numpy as np
 size = 4
 
+#Homework 02: Cifragem de Blocos
 def code(matrix, key=2):
 
-    for i in range(4):
+    for i in range(size):
       matrix[i] = np.transpose(matrix[i])
-      for j in range(4):
-        for k in range(4):
+      for j in range(size):
+        for k in range(size):
           (matrix[i])[j][k] = ((matrix[i])[j][k])+key
     return matrix
 
@@ -35,5 +36,5 @@ matrix = np.array(
    [2, 2, 2, 2]]])
 
 print('Matriz codificada:\n ', code(matrix, key))
-#para decodificar basta passar a chave com valor negativo
+# Para decodificar basta passar a chave com valor negativo
 print('\nMatriz decodificada:\n ', code(matrix, -key))
